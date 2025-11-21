@@ -1,0 +1,11 @@
+{
+  "title": "使用 GitHub Desktop 同步 Fork 仓库并保持与上游更新一致",
+  "tags": [
+    "同步",
+    "冲突",
+    "保留提交"
+  ],
+  "date": "2025-11-21",
+  "summary": "守源而更，循流而新；与上游同呼吸，却不舍己之花。定期融汇，冲突自解，方能让项目长青无惧时光。同步，不止是技术，更是与变化保持和谐。",
+  "cover": "/blogs/sync-fork-repo-with-github-desktop-keep-upstream-updated/f49e013bf21a05ad.jpeg"
+}
