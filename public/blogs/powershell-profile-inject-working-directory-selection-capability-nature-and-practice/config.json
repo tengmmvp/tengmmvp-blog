@@ -1,0 +1,11 @@
+{
+  "title": "在 PowerShell 中用 Profile 注入“工作目录选择能力”的本质与实践",
+  "tags": [
+    "PowerShell",
+    "工作目录",
+    "Profile"
+  ],
+  "date": "2025-12-02",
+  "summary": "目录即心境，Shell唯认当前所在。将选择目录的直觉化能力写入$PROFILE，如植一株小树于会话伊始，不扰根本，不改天地，却能随手而用，任工具皆得其所。",
+  "cover": "/blogs/powershell-profile-inject-working-directory-selection-capability-nature-and-practice/dd3455760c73bb29.jpeg"
+}
