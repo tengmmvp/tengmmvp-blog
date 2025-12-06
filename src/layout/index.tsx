@@ -1,5 +1,5 @@
 'use client'
-import { PropsWithChildren, useEffect } from 'react'
+import { PropsWithChildren } from 'react'
 import { useCenterInit } from '@/hooks/use-center'
 import BlurredBubblesBackground from './backgrounds/blurred-bubbles'
 import NavCard from '@/components/nav-card'
@@ -15,23 +15,18 @@ export default function Layout({ children }: PropsWithChildren) {
 	const { siteContent, regenerateKey } = useConfigStore()
 	const { maxSM, init } = useSize()
 
-	useEffect(() => {
-		if (typeof document === 'undefined') return
-		const color = siteContent.theme?.colorBrand
-		if (color) {
-			document.documentElement.style.setProperty('--color-brand', color)
-			if (document.body) {
-				document.body.style.setProperty('--color-brand', color)
-			}
-		}
-	}, [siteContent.theme?.colorBrand])
+	const backgroundImages = (siteContent.backgroundImages ?? []) as Array<{ id: string; url: string }>
+	const currentBackgroundImageId = siteContent.currentBackgroundImageId
+	const currentBackgroundImage =
+		currentBackgroundImageId && currentBackgroundImageId.trim()
+			? backgroundImages.find(item => item.id === currentBackgroundImageId)
+			: null
 
 	return (
 		<>
 			<Toaster
 				position='bottom-right'
 				richColors
-				// closeButton
 				icons={{
 					success: <CircleCheckIcon className='size-4' />,
 					info: <InfoIcon className='size-4' />,
@@ -45,6 +40,17 @@ export default function Layout({ children }: PropsWithChildren) {
 					} as React.CSSProperties
 				}
 			/>
+			{currentBackgroundImage && (
+				<div
+					className='fixed inset-0 z-0 overflow-hidden'
+					style={{
+						backgroundImage: `url(${currentBackgroundImage.url})`,
+						backgroundSize: 'cover',
+						backgroundPosition: 'center',
+						backgroundRepeat: 'no-repeat'
+					}}
+				/>
+			)}
 			<BlurredBubblesBackground colors={siteContent.backgroundColors} regenerateKey={regenerateKey} />
 			<main className='relative z-10 h-full'>
 				{children}

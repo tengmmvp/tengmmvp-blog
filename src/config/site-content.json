@@ -1,22 +1,26 @@
 {
 	"meta": {
-		"title": "TengMMVP",
-		"description": "这是一个专注于技术分享、学习心得和个人成长记录的地方。\nOne pixel sparks infinite possibilities; one idea sparks endless creativity."
+		"title": "TengMMVP-Blog",
+		"description": "这是一个专注于技术分享、学习心得和个人成长记录的地方。\n\nOne pixel sparks infinite possibilities; one idea sparks endless creativity.",
+		"username": "TengMMVP"
 	},
 	"theme": {
-		"colorBrand": "#35bfab",
-		"colorPrimary": "#334f52",
+		"colorBrand": "#de4331",
+		"colorPrimary": "#4E3F42",
 		"colorSecondary": "#7b888e",
+		"colorBrandSecondary": "#FCC841",
 		"colorBg": "#eeeeee",
-		"colorBorder": "#ffffff"
+		"colorBorder": "#ffffff",
+		"colorCard": "#ffffff66",
+		"colorArticle": "#ffffffcc"
 	},
 	"backgroundColors": [
-		"#EDDD62",
-		"#9EE7D1",
-		"#84D68A",
-		"#EDDD62",
-		"#88E6E5",
-		"#a7f3d0"
+		"#FCC841",
+		"#DFEFFC",
+		"#DEDE92",
+		"#DE4331",
+		"#FE9750",
+		"#FCC841"
 	],
 	"artImages": [
 		{
@@ -28,5 +32,36 @@
 			"url": "/images/art/a46372ff45bc5524.jpg"
 		}
 	],
-	"currentArtImageId": "a46372ff45bc5524"
+	"currentArtImageId": "a46372ff45bc5524",
+	"backgroundImages": [
+		{
+			"id": "",
+			"url": ""
+		}
+	],
+	"currentBackgroundImageId": "",
+	"socialButtons": [
+		{
+			"id": "github",
+			"type": "github",
+			"value": "https://github.com/yysuni",
+			"label": "Github",
+			"order": 3
+		},
+		{
+			"id": "juejin",
+			"type": "juejin",
+			"value": "https://juejin.cn/user/2427311675422382",
+			"label": "稀土掘金",
+			"order": 2
+		},
+		{
+			"id": "email",
+			"type": "email",
+			"value": "yysuni1001@gmail.com",
+			"label": "",
+			"order": 1
+		}
+	],
+	"clockShowSeconds": false
 }
