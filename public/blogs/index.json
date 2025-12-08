@@ -1,5 +1,17 @@
 [
   {
+    "slug": "glm-claudecode-global-prompts",
+    "title": "GLM+ClaudeCode全局开发规则",
+    "tags": [
+      "GLM",
+      "ClaudeCode",
+      "规则"
+    ],
+    "date": "2025-12-08",
+    "summary": "先问，后行；知界，守规。工具有道，方寸不乱；不妄猜，不违序，万事始于明确。",
+    "cover": "/blogs/glm-claudecode-global-prompts/7a362ed5915cddb7.jpeg"
+  },
+  {
     "slug": "powershell-profile-inject-working-directory-selection-capability-nature-and-practice",
     "title": "在 PowerShell 中用 Profile 注入“工作目录选择能力”的本质与实践",
     "tags": [
