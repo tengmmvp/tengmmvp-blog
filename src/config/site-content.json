@@ -2,7 +2,7 @@
 	"meta": {
 		"title": "TengMMVP-Blog",
 		"description": "One pixel sparks infinite possibilities; one idea sparks endless creativity.",
-		"username": "TengMMVP"
+		"username": "Yu Clears"
 	},
 	"theme": {
 		"colorBrand": "#2fcbe7",
@@ -29,7 +29,7 @@
 			"url": "/images/art/a46372ff45bc5524.jpg"
 		}
 	],
-	"currentArtImageId": "a46372ff45bc5524",
+	"currentArtImageId": "cat",
 	"backgroundImages": [
 		{
 			"id": "",
@@ -55,12 +55,12 @@
 	],
 	"clockShowSeconds": false,
 	"summaryInContent": false,
-	"isCachePem": false,
+	"isCachePem": true,
 	"hideEditButton": false,
 	"enableCategories": true,
 	"currentHatIndex": 2,
 	"hatFlipped": false,
-	"enableChristmas": true,
+	"enableChristmas": false,
 	"beian": {
 		"text": "",
 		"link": ""
